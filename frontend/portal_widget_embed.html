@@ -1,0 +1,65 @@
+<!--
+  Portal Integration Snippet
+  ==========================
+  This is what a procurement portal's engineering team would drop into their
+  own "Create Tender" / "Add Specification" page — a small inline widget,
+  not a full separate app. It calls the same /recommend endpoint as the demo
+  frontend, scoped with the portal's own API key (see /portal/register).
+
+  Usage: paste this <div> + <script> block into any host page. It renders
+  next to whatever textarea already holds the procurement official's draft
+  specification line.
+-->
+<div id="is-recommender-widget" style="max-width:520px; font-family:sans-serif; border:1px solid #ddd; border-radius:8px; padding:12px; margin-top:8px;">
+  <div style="font-size:12px; color:#666; margin-bottom:6px;">Suggested Indian Standards (auto-updates as you type)</div>
+  <div id="is-widget-results" style="font-size:13px; color:#333;">Start typing a specification above...</div>
+</div>
+
+<script>
+(function () {
+  const API_BASE = "http://localhost:8000";   // portal's ops team points this at the production API
+  const API_KEY = "PASTE_PORTAL_API_KEY_HERE"; // obtained via POST /portal/register
+  const HOST_TEXTAREA_SELECTOR = "#tender-spec-field"; // the portal's own existing input field
+  const DEBOUNCE_MS = 600;
+
+  const resultsEl = document.getElementById("is-widget-results");
+  const hostField = document.querySelector(HOST_TEXTAREA_SELECTOR);
+  let debounceTimer;
+
+  async function fetchSuggestions(text) {
+    if (!text || text.trim().length < 8) {
+      resultsEl.textContent = "Start typing a specification above...";
+      return;
+    }
+    resultsEl.textContent = "Checking standards...";
+    try {
+      const res = await fetch(`${API_BASE}/recommend`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json", "X-API-Key": API_KEY },
+        body: JSON.stringify({ query: text, top_k: 2 }),
+      });
+      const data = await res.json();
+      if (!data.recommendations || !data.recommendations.length) {
+        resultsEl.textContent = "No confident match yet — keep typing.";
+        return;
+      }
+      resultsEl.innerHTML = data.recommendations.map(r =>
+        `<div style="margin-top:4px;"><b>${r.is_number}</b> — ${r.title}` +
+        (r.certification !== "None" ? ` <span style="color:#a12a2a;">[${r.certification}]</span>` : "") +
+        `</div>`
+      ).join("");
+    } catch (e) {
+      resultsEl.textContent = "Recommendation service unavailable.";
+    }
+  }
+
+  if (hostField) {
+    hostField.addEventListener("input", (e) => {
+      clearTimeout(debounceTimer);
+      debounceTimer = setTimeout(() => fetchSuggestions(e.target.value), DEBOUNCE_MS);
+    });
+  } else {
+    resultsEl.textContent = `Host field "${HOST_TEXTAREA_SELECTOR}" not found — update the selector to match this portal's actual spec input field.`;
+  }
+})();
+</script>

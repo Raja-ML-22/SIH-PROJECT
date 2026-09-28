@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: is-recommender
+    runtime: python
+    plan: free
+    rootDir: backend
+    buildCommand: "pip install -r requirements.txt && python build_index.py"
+    startCommand: "uvicorn app:app --host 0.0.0.0 --port $PORT"
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.9
+      - key: HF_API_KEY
+        sync: false  # Render will prompt you to paste this in its dashboard —
+                      # it is never stored in this file or the git repo
+      - key: GOOGLE_TRANSLATE_API_KEY
+        sync: false  # optional — leave blank in Render's dashboard to skip
+    autoDeployTrigger: commit

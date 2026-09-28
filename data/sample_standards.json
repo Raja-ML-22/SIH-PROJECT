@@ -1,0 +1,235 @@
+[
+  {
+    "is_number": "IS 269:2015",
+    "title": "Ordinary Portland Cement — Specification (Sixth Revision)",
+    "scope": "Specification for 33 grade ordinary portland cement used in general construction, concrete works, masonry mortar.",
+    "group": "Civil Engineering",
+    "sub_group": "Cement and Concrete",
+    "status": "active",
+    "latest_amendment": "Amendment No. 1, 2019",
+    "certification": "Mandatory (BIS Product Certification / ISI Mark)",
+    "cross_references": [
+      {"is_number": "IS 4031", "relation": "test_method", "title": "Methods of Physical Tests for Hydraulic Cement"},
+      {"is_number": "IS 12269:2013", "relation": "related_product", "title": "Ordinary Portland Cement, 53 Grade — Specification"},
+      {"is_number": "IS 1489", "relation": "related_product", "title": "Portland Pozzolana Cement — Specification"},
+      {"is_number": "IS 650:1991", "relation": "normative", "title": "Standard Sand for Testing Cement — Specification"},
+      {"is_number": "IS 3535:1986", "relation": "normative", "title": "Methods of Sampling Hydraulic Cements"},
+      {"is_number": "IS 6461", "relation": "terminology", "title": "Glossary of Terms Relating to Cement Concrete (multi-part)"}
+    ]
+  },
+  {
+    "is_number": "IS 12269:2013",
+    "title": "Ordinary Portland Cement, 53 Grade — Specification",
+    "scope": "Specification for 53 grade ordinary portland cement for high strength concrete applications.",
+    "group": "Civil Engineering",
+    "sub_group": "Cement and Concrete",
+    "status": "active",
+    "latest_amendment": "None",
+    "certification": "Mandatory (BIS Product Certification / ISI Mark)",
+    "cross_references": [
+      {"is_number": "IS 4031", "relation": "test_method", "title": "Methods of Physical Tests for Hydraulic Cement"},
+      {"is_number": "IS 269:2015", "relation": "related_product", "title": "Ordinary Portland Cement — Specification"}
+    ]
+  },
+  {
+    "is_number": "IS 456:2000",
+    "title": "Plain and Reinforced Concrete — Code of Practice (Fourth Revision)",
+    "scope": "Code of practice for design and construction of plain and reinforced concrete structures.",
+    "group": "Civil Engineering",
+    "sub_group": "Cement and Concrete",
+    "status": "active",
+    "latest_amendment": "Amendment No. 3, 2016 (under revision)",
+    "certification": "None (Code of Practice)",
+    "cross_references": [
+      {"is_number": "IS 269:2015", "relation": "normative", "title": "Ordinary Portland Cement — Specification"},
+      {"is_number": "IS 383:2016", "relation": "normative", "title": "Coarse and Fine Aggregate for Concrete — Specification"},
+      {"is_number": "IS 1786:2008", "relation": "normative", "title": "High Strength Deformed Steel Bars for Concrete Reinforcement — Specification"}
+    ]
+  },
+  {
+    "is_number": "IS 1786:2008",
+    "title": "High Strength Deformed Steel Bars and Wires for Concrete Reinforcement — Specification (Third Revision)",
+    "scope": "Specification for TMT/HSD steel reinforcement bars used in RCC structures.",
+    "group": "Civil Engineering",
+    "sub_group": "Steel and Structural",
+    "status": "active",
+    "latest_amendment": "Amendment No. 4, 2018",
+    "certification": "Mandatory (BIS Product Certification / ISI Mark)",
+    "cross_references": [
+      {"is_number": "IS 1608", "relation": "test_method", "title": "Metallic Materials — Tensile Testing"},
+      {"is_number": "IS 456:2000", "relation": "related_product", "title": "Plain and Reinforced Concrete — Code of Practice"}
+    ]
+  },
+  {
+    "is_number": "IS 383:2016",
+    "title": "Coarse and Fine Aggregate for Concrete — Specification (Third Revision)",
+    "scope": "Specification for aggregates used in concrete manufacturing.",
+    "group": "Civil Engineering",
+    "sub_group": "Cement and Concrete",
+    "status": "active",
+    "latest_amendment": "None",
+    "certification": "Voluntary",
+    "cross_references": [
+      {"is_number": "IS 2386", "relation": "test_method", "title": "Methods of Test for Aggregates for Concrete"}
+    ]
+  },
+  {
+    "is_number": "IS 694:2010",
+    "title": "PVC Insulated Cables for Working Voltages up to 1100 V — Specification (Fourth Revision)",
+    "scope": "Specification for PVC insulated electric cables and cords for household and industrial wiring up to 1100V.",
+    "group": "Electrical Engineering",
+    "sub_group": "Wires and Cables",
+    "status": "active",
+    "latest_amendment": "Amendment No. 2, 2015",
+    "certification": "Mandatory (BIS Product Certification / ISI Mark)",
+    "cross_references": [
+      {"is_number": "IS 8130:2013", "relation": "normative", "title": "Conductors for Insulated Electric Cables and Flexible Cords — Specification"},
+      {"is_number": "IS 5831:1984", "relation": "normative", "title": "PVC Insulation and Sheath of Electric Cables — Requirements"},
+      {"is_number": "IS 732:2019", "relation": "installation", "title": "Electrical Wiring Installations — Code of Practice"},
+      {"is_number": "IS 3961", "relation": "test_method", "title": "Recommended Current Ratings for Cables"}
+    ]
+  },
+  {
+    "is_number": "IS 732:2019",
+    "title": "Electrical Wiring Installations — Code of Practice (Fourth Revision)",
+    "scope": "Code of practice for design, erection, and testing of electrical wiring installations in buildings.",
+    "group": "Electrical Engineering",
+    "sub_group": "Installation Practice",
+    "status": "active",
+    "latest_amendment": "None",
+    "certification": "None (Code of Practice)",
+    "cross_references": [
+      {"is_number": "IS 694:2010", "relation": "normative", "title": "PVC Insulated Cables for Working Voltages up to 1100 V"},
+      {"is_number": "IS 3043:2018", "relation": "safety", "title": "Code of Practice for Earthing"},
+      {"is_number": "IS 8828:1996", "relation": "normative", "title": "Circuit Breakers for Overcurrent Protection — Guide"}
+    ]
+  },
+  {
+    "is_number": "IS 3043:2018",
+    "title": "Code of Practice for Earthing (Second Revision)",
+    "scope": "Recommendations for earthing of electrical installations for safety.",
+    "group": "Electrical Engineering",
+    "sub_group": "Safety",
+    "status": "active",
+    "latest_amendment": "None",
+    "certification": "None (Code of Practice)",
+    "cross_references": []
+  },
+  {
+    "is_number": "IS 13360",
+    "title": "Household LPG Cylinders and Valves — Specification (multi-part)",
+    "scope": "Specification for LPG gas cylinders for domestic cooking use.",
+    "group": "Mechanical Engineering",
+    "sub_group": "Pressure Vessels",
+    "status": "active",
+    "latest_amendment": "Varies by part",
+    "certification": "Mandatory (Compulsory Registration Scheme - CRS)",
+    "cross_references": [
+      {"is_number": "IS 3196", "relation": "related_product", "title": "LPG Cylinder Valves — Specification"}
+    ]
+  },
+  {
+    "is_number": "IS 2508:2004",
+    "title": "Domestic Butane Gas Stoves for Use with LPG — Specification (Third Revision)",
+    "scope": "Specification for domestic LPG gas stoves.",
+    "group": "Mechanical Engineering",
+    "sub_group": "Domestic Appliances",
+    "status": "active",
+    "latest_amendment": "Amendment No. 1, 2010",
+    "certification": "Mandatory (BIS Product Certification / ISI Mark)",
+    "cross_references": [
+      {"is_number": "IS 13360", "relation": "related_product", "title": "Household LPG Cylinders and Valves"}
+    ]
+  },
+  {
+    "is_number": "IS 15410:2003",
+    "title": "Protective Helmets for Two-Wheeler Riders — Specification",
+    "scope": "Specification for protective helmets used by riders of two-wheeled motor vehicles.",
+    "group": "Textile / Safety Equipment",
+    "sub_group": "Personal Protective Equipment",
+    "status": "active",
+    "latest_amendment": "Amendment No. 2, 2021",
+    "certification": "Mandatory (BIS Product Certification / ISI Mark)",
+    "cross_references": [
+      {"is_number": "IS 4151", "relation": "related_product", "title": "Protective Industrial Helmets — Specification"},
+      {"is_number": "IS 2925", "relation": "test_method", "title": "Industrial Safety Helmets — Methods of Test"}
+    ]
+  },
+  {
+    "is_number": "IS 1417:2016",
+    "title": "Determination of Fineness of Gold and Gold Alloys, and of Silver and Silver Alloys — Methods (Third Revision)",
+    "scope": "Test methods for assaying gold/silver jewellery and articles, used in procurement of gold/silver items requiring hallmarking.",
+    "group": "Chemical",
+    "sub_group": "Precious Metals",
+    "status": "active",
+    "latest_amendment": "None",
+    "certification": "Mandatory (BIS Hallmarking)",
+    "cross_references": [
+      {"is_number": "IS 15820", "relation": "normative", "title": "Hallmarking of Silver Jewellery and Silver Artefacts — Specification"}
+    ]
+  },
+  {
+    "is_number": "IS 1:2005",
+    "title": "Rules for Rounding Off Numerical Values (Fourth Revision)",
+    "scope": "General terminology / methodology standard used across all technical specification writing.",
+    "group": "Management Systems",
+    "sub_group": "General",
+    "status": "active",
+    "latest_amendment": "None",
+    "certification": "None",
+    "cross_references": []
+  },
+  {
+    "is_number": "IS 875",
+    "title": "Code of Practice for Design Loads (Other than Earthquake) for Buildings and Structures (multi-part)",
+    "scope": "Design loads (dead, live, wind, snow) for building structures.",
+    "group": "Civil Engineering",
+    "sub_group": "Structural Design",
+    "status": "active",
+    "latest_amendment": "Varies by part",
+    "certification": "None (Code of Practice)",
+    "cross_references": [
+      {"is_number": "IS 456:2000", "relation": "related_product", "title": "Plain and Reinforced Concrete — Code of Practice"}
+    ]
+  },
+  {
+    "is_number": "IS 1893:2016",
+    "title": "Criteria for Earthquake Resistant Design of Structures (Sixth Revision)",
+    "scope": "Seismic design criteria for buildings and structures.",
+    "group": "Civil Engineering",
+    "sub_group": "Structural Design",
+    "status": "active",
+    "latest_amendment": "None",
+    "certification": "None (Code of Practice)",
+    "cross_references": [
+      {"is_number": "IS 456:2000", "relation": "related_product", "title": "Plain and Reinforced Concrete — Code of Practice"},
+      {"is_number": "IS 875", "relation": "normative", "title": "Code of Practice for Design Loads"}
+    ]
+  },
+  {
+    "is_number": "IS 10500:2012",
+    "title": "Drinking Water — Specification (Second Revision)",
+    "scope": "Specification for quality of drinking water for procurement of water supply/purification systems.",
+    "group": "Food and Water",
+    "sub_group": "Water Quality",
+    "status": "active",
+    "latest_amendment": "Amendment No. 3, 2015",
+    "certification": "Mandatory (BIS Product Certification for packaged drinking water)",
+    "cross_references": [
+      {"is_number": "IS 3025", "relation": "test_method", "title": "Methods of Sampling and Test for Water and Wastewater"}
+    ]
+  },
+  {
+    "is_number": "IS 14543:2016",
+    "title": "Packaged Drinking Water (Other than Packaged Natural Mineral Water) — Specification (First Revision)",
+    "scope": "Specification for packaged/bottled drinking water for procurement of bottled water supply.",
+    "group": "Food and Water",
+    "sub_group": "Water Quality",
+    "status": "active",
+    "latest_amendment": "None",
+    "certification": "Mandatory (BIS Product Certification / ISI Mark)",
+    "cross_references": [
+      {"is_number": "IS 10500:2012", "relation": "normative", "title": "Drinking Water — Specification"}
+    ]
+  }
+]

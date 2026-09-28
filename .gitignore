@@ -1,0 +1,9 @@
+venv/
+__pycache__/
+*.pyc
+.env
+index/
+data/scraped_standards.json
+data/refresh_status.json
+.vscode/
+.DS_Store
